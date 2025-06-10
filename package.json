@@ -1,6 +1,6 @@
 {
   "name": "@moeloubani/libvips-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for libvips image processing library with comprehensive image processing capabilities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

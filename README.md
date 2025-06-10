@@ -219,7 +219,7 @@ The server provides detailed error messages for:
 - **Package**: `@moeloubani/libvips-mcp-server`
 - **npm**: https://www.npmjs.com/package/@moeloubani/libvips-mcp-server
 - **Author**: Moe Loubani
-- **Version**: 1.0.0
+- **Version**: 1.0.1
 
 ## License
 
