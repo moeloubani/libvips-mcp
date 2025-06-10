@@ -1,0 +1,32 @@
+{
+  "name": "libvips-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for libvips image processing library",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & node --watch dist/index.js",
+    "test": "node dist/test.js"
+  },
+  "keywords": [
+    "mcp",
+    "libvips",
+    "image-processing",
+    "server"
+  ],
+  "author": "MCP Server",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
