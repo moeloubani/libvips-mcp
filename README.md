@@ -1,5 +1,6 @@
 # Libvips MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@moeloubani/libvips-mcp)](https://smithery.ai/server/@moeloubani/libvips-mcp)
 [![npm version](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server.svg)](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -58,6 +59,14 @@ This MCP server brings the power of libvips image processing to any MCP-compatib
 - **create_solid_color**: Generate solid color images of any size
 
 ## Installation
+
+### Installing via Smithery
+
+To install Libvips Image Processing Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@moeloubani/libvips-mcp):
+
+```bash
+npx -y @smithery/cli install @moeloubani/libvips-mcp --client claude
+```
 
 ### From npm (Recommended)
 
