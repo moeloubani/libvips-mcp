@@ -1,22 +1,49 @@
 {
-  "name": "libvips-mcp-server",
+  "name": "@moeloubani/libvips-mcp-server",
   "version": "1.0.0",
-  "description": "MCP server for libvips image processing library",
+  "description": "MCP server for libvips image processing library with comprehensive image processing capabilities",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "bin": {
+    "libvips-mcp-server": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch & node --watch dist/index.js",
-    "test": "node dist/test.js"
+    "test": "node dist/test.js",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "keywords": [
     "mcp",
     "libvips",
     "image-processing",
-    "server"
+    "server",
+    "sharp",
+    "image-manipulation",
+    "model-context-protocol",
+    "image-resize",
+    "image-conversion",
+    "typescript"
   ],
-  "author": "MCP Server",
+  "author": "Moe Loubani",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moeloubani/libvips-mcp-server"
+  },
+  "homepage": "https://github.com/moeloubani/libvips-mcp-server",
+  "bugs": {
+    "url": "https://github.com/moeloubani/libvips-mcp-server/issues"
+  },
+  "contributors": [
+    {
+      "name": "Moe Loubani",
+      "email": "moe@moe.ca",
+      "url": "https://moeloubani.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
@@ -28,5 +55,13 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 } 

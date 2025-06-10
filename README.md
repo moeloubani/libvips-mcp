@@ -1,6 +1,22 @@
 # Libvips MCP Server
 
+[![npm version](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server.svg)](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A Model Context Protocol (MCP) server that provides comprehensive image processing capabilities using the libvips library (via Sharp, which is built on libvips).
+
+## Quick Start
+
+```bash
+# Install the package
+npm install -g @moeloubani/libvips-mcp-server
+
+# Run the server (for testing)
+libvips-mcp-server
+
+# Or use with npx (no global install needed)
+npx @moeloubani/libvips-mcp-server
+```
 
 ## Overview
 
@@ -43,7 +59,23 @@ This MCP server brings the power of libvips image processing to any MCP-compatib
 
 ## Installation
 
+### From npm (Recommended)
+
 ```bash
+npm install @moeloubani/libvips-mcp-server
+```
+
+Or install globally:
+
+```bash
+npm install -g @moeloubani/libvips-mcp-server
+```
+
+### From Source
+
+```bash
+git clone <repository-url>
+cd libvips-mcp-server
 npm install
 npm run build
 ```
@@ -54,6 +86,30 @@ npm run build
 
 The server can be used with any MCP-compatible application. Add it to your MCP client configuration:
 
+#### If installed globally:
+```json
+{
+  "servers": {
+    "libvips": {
+      "command": "libvips-mcp-server"
+    }
+  }
+}
+```
+
+#### If installed locally:
+```json
+{
+  "servers": {
+    "libvips": {
+      "command": "npx",
+      "args": ["@moeloubani/libvips-mcp-server"]
+    }
+  }
+}
+```
+
+#### If running from source:
 ```json
 {
   "servers": {
@@ -157,6 +213,13 @@ The server provides detailed error messages for:
 
 - **Sharp**: High-performance Node.js image processing (built on libvips)
 - **@modelcontextprotocol/sdk**: MCP SDK for server implementation
+
+## Package Information
+
+- **Package**: `@moeloubani/libvips-mcp-server`
+- **npm**: https://www.npmjs.com/package/@moeloubani/libvips-mcp-server
+- **Author**: Moe Loubani
+- **Version**: 1.0.0
 
 ## License
 
