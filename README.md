@@ -1,10 +1,11 @@
-# Libvips MCP Server
+# 🎨 Libvips MCP Server Enhanced Edition (v1.2.0)
 
 [![smithery badge](https://smithery.ai/badge/@moeloubani/libvips-mcp)](https://smithery.ai/server/@moeloubani/libvips-mcp)
 [![npm version](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server.svg)](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![wasm-vips](https://img.shields.io/badge/wasm--vips-enhanced-blue.svg)](https://www.npmjs.com/package/wasm-vips)
 
-A Model Context Protocol (MCP) server that provides comprehensive image processing capabilities using the libvips library (via Sharp, which is built on libvips).
+A Model Context Protocol (MCP) server that provides comprehensive image processing capabilities using both Sharp (libvips) and wasm-vips, offering **300+ image operations** with professional-grade processing power.
 
 ## Quick Start
 
@@ -57,6 +58,41 @@ This MCP server brings the power of libvips image processing to any MCP-compatib
 
 ### Creative Tools
 - **create_solid_color**: Generate solid color images of any size
+
+## 🚀 Enhanced Operations (v1.1.0) - New!
+
+### Morphological Operations (wasm-vips powered)
+- **image_morphology**: Apply erosion, dilation, opening, and closing operations with custom kernel sizes and iterations
+
+### Drawing Operations
+- **image_draw_line**: Draw lines with custom colors and widths
+- **image_draw_circle**: Draw circles and filled circles with custom colors
+
+### Advanced Edge Detection
+- **image_edge_detection**: Apply Sobel, Prewitt, Roberts, and Laplacian edge detection filters
+
+### Comprehensive Analysis
+- **image_advanced_stats**: Calculate detailed image statistics including histograms, field analysis, and enhanced metadata
+
+## 🔬 Advanced Scientific Operations (Step 2) - New!
+
+### Frequency Domain Processing
+- **image_fft**: Apply Fast Fourier Transform for frequency domain analysis and filtering
+- **image_custom_convolution**: Apply custom convolution kernels for advanced filtering effects
+
+### Color Space Operations
+- **image_colorspace_convert**: Convert between sRGB, LAB, HSV, CMYK, XYZ, and other color spaces
+
+### Noise and Texture Operations
+- **image_add_noise**: Add Gaussian, uniform, or salt-and-pepper noise for testing and effects
+- **image_texture_analysis**: Analyze image texture using statistical measures and window-based analysis
+
+### Geometric Transformations
+- **image_perspective_transform**: Apply perspective transformations with custom corner points
+- **image_flood_fill**: Fill connected regions with specified colors and tolerance
+
+### Multi-Resolution Analysis
+- **image_create_pyramid**: Create image pyramids for multi-resolution processing and analysis
 
 ## Installation
 
@@ -180,6 +216,18 @@ The server can be used with any MCP-compatible application. Add it to your MCP c
     "x": 100,
     "y": 100,
     "blend": "multiply"
+  }
+}
+```
+
+#### Fast Fourier Transform (Advanced)
+```json
+{
+  "name": "image_fft",
+  "arguments": {
+    "input_path": "/path/to/input.jpg",
+    "output_path": "/path/to/fft.jpg",
+    "inverse": false
   }
 }
 ```

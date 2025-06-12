@@ -1,7 +1,7 @@
 {
   "name": "@moeloubani/libvips-mcp-server",
-  "version": "1.0.1",
-  "description": "MCP server for libvips image processing library with comprehensive image processing capabilities",
+  "version": "1.2.0",
+  "description": "Enhanced MCP server for libvips image processing library with 300+ operations and advanced capabilities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -19,6 +19,7 @@
   "keywords": [
     "mcp",
     "libvips",
+    "wasm-vips",
     "image-processing",
     "server",
     "sharp",
@@ -26,6 +27,11 @@
     "model-context-protocol",
     "image-resize",
     "image-conversion",
+    "morphological-operations",
+    "edge-detection",
+    "drawing-operations",
+    "image-analysis",
+    "advanced-statistics",
     "typescript"
   ],
   "author": "Moe Loubani",
@@ -47,7 +53,8 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "wasm-vips": "^0.0.13"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -59,9 +66,10 @@
   "files": [
     "dist/",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CAPABILITIES.md"
   ],
   "publishConfig": {
     "access": "public"
   }
-} 
+}
