@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/moeloubani-libvips-mcp-badge.png)](https://mseep.ai/app/moeloubani-libvips-mcp)
+
 # 🎨 Libvips MCP Server Enhanced Edition (v1.2.0)
 
 [![LightNow capabilities](https://lightnow.ai/badge/io.github.moeloubani/libvips-mcp)](https://lightnow.ai/servers/io.github.moeloubani/libvips-mcp)
