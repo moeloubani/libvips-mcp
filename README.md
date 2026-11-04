@@ -1,6 +1,6 @@
 # 🎨 Libvips MCP Server Enhanced Edition (v1.2.0)
 
-[![smithery badge](https://smithery.ai/badge/@moeloubani/libvips-mcp)](https://smithery.ai/server/@moeloubani/libvips-mcp)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.moeloubani/libvips-mcp)](https://lightnow.ai/servers/io.github.moeloubani/libvips-mcp)
 [![npm version](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server.svg)](https://badge.fury.io/js/@moeloubani%2Flibvips-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![wasm-vips](https://img.shields.io/badge/wasm--vips-enhanced-blue.svg)](https://www.npmjs.com/package/wasm-vips)
